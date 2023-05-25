@@ -1,0 +1,19 @@
+begin
+    sentence = input("Enter a sentence: ")
+    length = 0
+    words = 1
+    vowels = 0
+
+    for var in sentence:
+        length += 1
+        if var == ' ':
+            words += 1
+        if var in ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']:
+            vowels += 1
+        if var == '.':
+            break
+
+    print("Length of the sentence:", length)
+    print("Number of words in the sentence:", words)
+    print("Number of vowels in the sentence:", vowels)
+end
